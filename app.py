@@ -3,7 +3,7 @@ from quickSort import quickSort
 
 app = Flask(__name__)
 
-@app.route('/sort', methods=['POST'])
+@app.route('/arrays/sorted', methods=['GET'])
 def sort_array():
     data = request.json
     array = data.get('array')
